@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #fafafa;
+  --bg-secondary: #f4f4f5;
+  --ink: #09090b;
+  --muted: #71717a;
+  --border: #e4e4e7;
+  --accent: #2563eb;
+}
+
+* {
+  border-color: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--accent);
+  color: #fafafa;
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.font-tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Subtle vertical rule grid used behind hero/flagship sections for
+   technical texture — never a decorative gradient, just structure. */
+.bg-grid-light {
+  background-image: linear-gradient(
+    to right,
+    rgba(9, 9, 11, 0.05) 1px,
+    transparent 1px
+  );
+  background-size: 96px 100%;
+}
+
+.bg-grid-dark {
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.06) 1px,
+    transparent 1px
+  );
+  background-size: 96px 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
