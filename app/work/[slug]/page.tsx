@@ -25,19 +25,19 @@ const SECTION_DEFS: {
     number: "01",
     label: "Problem",
     key: "problem",
-    placeholder: "Context and motivation for this project — add when written up.",
+    placeholder: "Coming Soon!",
   },
   {
     number: "02",
     label: "Product & Solution",
     key: "productSolution",
-    placeholder: "What was actually built — add when written up.",
+    placeholder: "Coming Soon!",
   },
   {
     number: "03",
     label: "Status & Learnings",
     key: "statusLearnings",
-    placeholder: "Key takeaways and what changed along the way — add when written up.",
+    placeholder: "Coming Soon!",
   },
 ];
 
@@ -224,8 +224,7 @@ export default async function ProjectDetail({
                 </div>
               ) : (
                 <p className="max-w-2xl text-base italic leading-relaxed text-muted md:col-span-3">
-                  Frontend, backend, AI/APIs, and deployment breakdown — add
-                  when written up.
+                  Coming Soon!
                 </p>
               )}
             </div>
