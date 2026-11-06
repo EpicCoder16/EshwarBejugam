@@ -13,7 +13,7 @@ Open http://localhost:3000.
 
 ## What's here
 
-- `app/page.tsx` — home page: Hero → Patches showcase → other-work canvas → How I Build → About
+- `app/page.tsx` — home page: Hero → Patchy showcase → other-work canvas → How I Build → About
 - `app/work/[slug]/page.tsx` — case-study template shared by every project
 - `lib/projects.ts` — **single source of truth** for all project data. Edit this file to add copy, links, and stack details; the home page and every case-study page read from it automatically.
 - `components/` — one component per section, each named for what it renders
@@ -33,7 +33,7 @@ Any field left blank renders as an explicit italic placeholder on the page (e.g.
 
 ## Live project embeds
 
-Every project visual — the Patches showcase, each project row's inline preview, and each `/work/[slug]` case-study page — renders through `components/ProjectWindow.tsx`. Set a project's `liveUrl` in `lib/projects.ts` and that space automatically becomes a real, interactive `<iframe>` onto the live site instead of a placeholder box. No `liveUrl` set → it just shows the labeled placeholder, same as before.
+Every project visual — the Patchy showcase, each project row's inline preview, and each `/work/[slug]` case-study page — renders through `components/ProjectWindow.tsx`. Set a project's `liveUrl` in `lib/projects.ts` and that space automatically becomes a real, interactive `<iframe>` onto the live site instead of a placeholder box. No `liveUrl` set → it just shows the labeled placeholder, same as before.
 
 **Important caveat:** some sites send `X-Frame-Options` or a `Content-Security-Policy: frame-ancestors` header that blocks embedding entirely. If that happens for one of your projects, the frame will render blank — there's no workaround from the portfolio side other than swapping that spot back to a screenshot or linking out instead. Worth testing each `liveUrl` once it's live.
 
@@ -47,7 +47,7 @@ The compact hover preview on desktop project rows stays non-interactive by desig
 
 ## Still needs real content
 
-- Patches: live URL, GitHub URL, AI/deployment stack, and full case-study copy
+- Patchy: GitHub URL, AI/deployment stack, and full case-study copy
 - Aspira, Roux, Umoja, Vicino: year, description, stack, and full case-study copy
 - Hero bio card: a real photo at `public/photo.jpg` (currently a labeled placeholder box), social profile URLs in `components/Hero.tsx`, and a resume PDF at `public/resume.pdf`
 - Footer: GitHub / LinkedIn / email links

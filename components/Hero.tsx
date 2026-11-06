@@ -122,7 +122,7 @@ export default function Hero() {
               Eshwar Bejugam
             </div>
             <div className="mt-2 inline-block border border-border px-2 py-1 font-mono text-[10px] tracking-widest text-muted">
-              CS @ PURDUE · BUILDING PATCHES
+              CS @ PURDUE · BUILDING PATCHY
             </div>
             <p className="mt-4 text-sm leading-relaxed text-muted">
               Software engineer and builder based in West Lafayette, Indiana.

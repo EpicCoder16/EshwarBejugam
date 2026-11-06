@@ -1,6 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
-import PatchesShowcase from "@/components/PatchesShowcase";
+import PatchyShowcase from "@/components/PatchyShowcase";
 import ProjectCanvas from "@/components/ProjectCanvas";
 import HowIBuild from "@/components/HowIBuild";
 import About from "@/components/About";
@@ -12,7 +12,7 @@ export default function Home() {
       <Navigation />
       <main>
         <Hero />
-        <PatchesShowcase />
+        <PatchyShowcase />
         <ProjectCanvas />
         <HowIBuild />
         <About />

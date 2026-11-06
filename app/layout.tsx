@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Eshwar Bejugam — Software & Products",
   description:
-    "Eshwar Bejugam is a Computer Science student at Purdue University who builds software products, startups, and AI projects, including Patches.",
+    "Eshwar Bejugam is a Computer Science student at Purdue University who builds software products, startups, and AI projects, including Patchy.",
 };
 
 export default function RootLayout({

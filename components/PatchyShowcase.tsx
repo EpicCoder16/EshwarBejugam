@@ -13,7 +13,7 @@ const fadeUp = {
   show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] } },
 };
 
-export default function PatchesShowcase() {
+export default function PatchyShowcase() {
   const p = flagshipProject;
 
   return (
@@ -95,7 +95,7 @@ export default function PatchesShowcase() {
             </h3>
             <p className="mt-3 text-sm text-bg/90">
               {p.caseStudy?.productSolution ??
-                "Patches is essentially an AI layer for the internet. Using prompts, users can easily personalize websites around their behavior and priorities, with Patches automatically applying CSS “patches”. It can highlight important information, remove distractions, and reorganize interfaces without actually modifying the site itself. Over time, Patches learns how users work across platforms and automatically adapts webpages to fit their workflows, making the internet feel truly yours."}
+                "Patchy is essentially an AI layer for the internet. Using prompts, users can easily personalize websites around their behavior and priorities, with Patchy automatically applying CSS patches. It can highlight important information, remove distractions, and reorganize interfaces without actually modifying the site itself. Over time, Patchy learns how users work across platforms and automatically adapts webpages to fit their workflows, making the internet feel truly yours."}
             </p>
           </motion.div>
 

@@ -38,25 +38,25 @@ export type Project = {
 };
 
 // NOTE: This is the single source of truth for every project shown on the
-// site — the home page list, the Patches showcase, and each /work/[slug]
+// site — the home page list, the Patchy showcase, and each /work/[slug]
 // case study all read from here. Fill in real copy, links, and screenshots
 // as they become available; nothing below is fabricated, so several fields
 // are intentionally left blank rather than guessed.
 export const projects: Project[] = [
   {
-    id: "patches",
-    slug: "patches",
+    id: "patchy",
+    slug: "patchy",
     number: "01",
-    name: "Patches",
+    name: "Patchy",
     year: "2026",
     category: "AI / BROWSER / STARTUP",
     status: "LIVE",
     description:
       "An AI layer that restructures the internet around user behavior.",
     flagship: true,
-    liveUrl: "https://patches-landing.vercel.app",
+    liveUrl: "https://trypatchy.me",
     githubUrl: undefined,
-    image: "/projects/patches/cover.png",
+    image: "/projects/patchy/cover.png",
     stack: {
       frontend: ["HTML", "CSS", "JavaScript"],
       backend: ["Node.js", "Firebase (Firestore/Auth)"],
